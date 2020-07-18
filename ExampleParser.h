@@ -10,9 +10,9 @@
 
 class ExampleListener: public JsonListener {
 
-  bool takeNextValue;
+  bool takeNextValueId, takeNextValueUser, takeNextValueRaw;
 
-  String postId;
+  String postId, userName, postText;
 
   public:
     virtual void whitespace(char c);
@@ -33,5 +33,10 @@ class ExampleListener: public JsonListener {
 
     virtual void startObject();
 
-    String showId();
+    String getPostId();
+
+    String getUserName();
+
+    String getPostText();
+    
 };
