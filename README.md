@@ -3,4 +3,4 @@ Streaming JSON Test
 
 Eventually trying to read the first post from the community via the ESP32
 
-The posts.json is huge and won't fit in the buffer, so I've implemented a streaming parser but I'm having some issues...
+Trying to figure out how to do GET request to 2 different URL, right now using scoped instances of the HTTPClient class but this creates a memory leak
