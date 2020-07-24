@@ -10,7 +10,7 @@
 
 class ExampleListener: public JsonListener {
 
-  bool takeNextValueId, takeNextValueUser, takeNextValueRaw;
+  int takeNextValueId, takeNextValueUser, takeNextValueRaw;
 
   String postId, userName, postText;
 
@@ -38,5 +38,7 @@ class ExampleListener: public JsonListener {
     String getUserName();
 
     String getPostText();
+
+     void reset();
     
 };
